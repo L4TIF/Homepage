@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans:wght@100..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    font-family: "Playfair Display", Roboto;
+}
+
+
+.background {
+    background-color: #0891B2;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    box-shadow:2px  0px 9px grey;
+    transform: translate(-42%, 8%) rotate(-1deg)scale(2) skewY(-10deg);
+}
