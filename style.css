@@ -177,7 +177,7 @@ main {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 4rem;
     grid-auto-flow: row;
 
@@ -196,7 +196,7 @@ main {
 }
 
 .project-icon {
-   height: 50%;
+    height: 50%;
 }
 
 .project-icon img {
@@ -261,8 +261,68 @@ a:hover {
 }
 
 
+/* footer */
+footer {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 15%;
+    background-color: #0891B2;
+    color: white;
+}
 
+.telephone-number-wrapper,
+.mail-wrapper {
 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.telephone-number-wrapper svg,
+.mail-wrapper svg {
+    height: 30px;
+    width: fit-content;
+}
+
+.contact-me-heading {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 50%;
+   height: 100%;
+    
+}
+
+.right {
+    width: 50%;
+
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-social-icons {
+    display: flex;
+    font-size: 2rem;
+    gap: 15px;
+
+}
+
+.footer-social-icons a:hover {
+    transform: scale(1.2rem);
+}
 
 
 @media (min-width: 711px) and (max-width: 1100px) {
@@ -270,6 +330,8 @@ a:hover {
     .about-us-center picture>img {
         width: 22rem;
     }
+
+
 
     .about-us-center picture {
         float: left;
@@ -293,7 +355,9 @@ a:hover {
         transform: none;
     }
 
-
+    footer {
+        padding: 6rem 10%;
+    }
 
 }
 
@@ -345,5 +409,34 @@ a:hover {
 
     .about-us-socials i {
         font-size: 2rem;
+    }
+
+    .left {
+        padding: 3rem;
+        width: 100%;
+        row-gap: 20px;
+        align-items: start;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .contact-me-desc {
+        text-align: start;
+    }
+
+    footer {
+        height: fit-content;
+        width: 100%;
+        display: block;
+
+        padding: 0;
+    }
+
+    .footer-social-icons {
+        font-size: 3rem;
+        width: 100%;
+        justify-content: center;
     }
 }
